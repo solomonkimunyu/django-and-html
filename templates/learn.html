@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+    body {
+      background-image: url('https://i.pinimg.com/originals/0b/df/db/0bdfdb467f996bbbed1e5f1baa3740e2.gif');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+    </style>
+<body>
+<h2>Absolute URLs</h2>
+<p><a href="https://www.w3.org/">W3C</a></p>
+<p><a href="https://www.google.com/">Google</a></p>
+
+<h2>Relative URLs</h2>
+<p><a href="html_images.asp">HTML Images</a></p>
+<p><a href="/css/default.asp">CSS Tutorial</a></p>
+{% comment %} 
+<a href="https://www.church-of-christ.org/">
+    <img src="https://i.pinimg.com/originals/0b/df/db/0bdfdb467f996bbbed1e5f1baa3740e2.gif" alt="flowers in Kenya" usemap="#baptize">style="float:left; margin-top:"
+<script>
+function myFunction() {
+    alert("You clicked me John")
+}
+</script>
+</a> {% endcomment %}
+<p>
+<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fgfycat.com%2Fgifs%2Fsearch%2Fjesus%2Bbaptism&psig=AOvVaw2VUn9azUHu3L1RJ-XyKOEj&ust=1646728051839000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLiy2JbKs_YCFQAAAAAdAAAAABAD" alt="flowers in Kenya" usemap="#baptize">style="float:left; margin-top:"
+<map name="baptize">
+
+<area shape="rect" coords="43, 20, 50, 60" alt="John" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftenor.com%2Fview%2Fjesus-water-baptism-glory-to-god-hallelujah-sacred-gif-16978506&psig=AOvVaw1qJy4bKcf6-gUqiV7Xi7n_&ust=1646727747574000&source=images&cd=vfe&ved=0CAwQjhxqFwoTCJDEzYXJs_YCFQAAAAAdAAAAABAD">
+</map>
+</p>
+<br>
+{% comment %} <a href="default.asp">
+<img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a> {% endcomment %}
+
+<a href="mailto:solomonkimunyu@gmail.com">email</a>
+<button onclick="document.location='https://www.w3schools.com/default.asp'">HTML Tutorial</button>
+
+<button onclick="malito:solomonkimunyu@gmail.com">email</a></button>
+
+<form action="https://google.com">
+    <input type="submit" value="Go to Google" />
+</form>
+
+<p><a href="https://www.linkedin.com/notifications/" target="_blank">visit Google</a></p>
+{% comment %} <style type="text/css">
+    
+    a:link {
+        color:green;
+        background-color: transparent;
+        text-decoration: none;
+        background-color: #c65769;
+        
+    }
+    a:visited {
+        color:pink;
+        background-color: transparent;
+        text-decoration: none;
+        display: inline-block;
+    }
+    a:hover {
+        color:red;
+        background-color: transparent;
+        text-decoration: underline;
+
+    }
+    a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+</style> {% endcomment %}
+
+<style>
+    a:link, a:visited {
+        background-color: orange;
+        color:blue;
+        padding: 5px 15px;
+        text-align: left;
+        text-decoration: none;
+        display: inline-block;
+
+    }
+    a:hover, a:active{
+        background-color: red;
+    }
+</body>
+{% endblock content %}

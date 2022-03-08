@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block content %}
+<title>My Page Title</title>
+  <link rel="icon" href="">
+<img src="bapt.png">
+e picture Element</h2>
+
+<picture>
+  <source srcset="img_avatar.png">
+  <source srcset="bapt.png">
+  <img src="img_beatles.gif" alt="Beatles" style="width:auto;">
+</picture>
+
+<p>The picture element can be used when the image format is not supported by all devices.</p>
+<img src="baptusm.gif">
+<p>The device will use the first image format it supports, and ignore the rest of the images.</p>
+<style>
+    table. th, td{
+        border: 10px solid;
+        {% comment %} border-collapse: collapse; {% endcomment %}
+        border-radius:10px;
+    }
+    th, td,th {
+        background-color: white;
+    }
+    td, th {
+        border-style: solid;
+        border-color: red;
+    }
+    th {
+        text-align: center;
+    }
+</style>
+<table style="width:100%">
+    <caption>Memmory verses</caption>
+    <tr>
+        <th style="height:60%" colspan="2">Book and chapter</th>
+        {% comment %} <th>Chapter</th> {% endcomment %}
+        <th>Verse</th>
+    </tr>
+    <tr style="height:40px">
+        <td>James</td>
+        <th>2</th>
+        <td>17</td>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>3</td>
+        <th>16</th>
+    </tr>
+</table>
+{% endblock %}
